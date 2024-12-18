@@ -24,6 +24,7 @@ public class FormController {
  // Show form on GET request
     @GetMapping("/")
     public String showForm(Model model) {
+    	System.out.println("Load Page...");
         model.addAttribute("formDataList", formDataList);
         return "index";
     }
@@ -34,7 +35,7 @@ public class FormController {
                              @RequestParam("lastName") String lastName,
 //                             @RequestParam("email") String email,
                              Model model) {
-
+    	System.out.println("firstName:"+firstName + "\n"+ "lastName:"+lastName);
         // Add the submitted form data to the list
 //        formDataList.add(new String[]{firstName, lastName, email});
         formDataList.add(new String[]{firstName, lastName});
