@@ -51,6 +51,7 @@
 	</dependencies>
 
 	<build>
+		<finalName>SampleProject.jar</finalName>
 		<plugins>
 			<!-- Spring Boot Maven plugin for building a runnable jar -->
 			<plugin>
